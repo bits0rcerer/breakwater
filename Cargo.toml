@@ -1,5 +1,5 @@
 [workspace]
-members = ["breakwater-parser", "breakwater"]
+members = ["breakwater-parser", "breakwater", "fuzz"]
 resolver = "2"
 
 [workspace.package]

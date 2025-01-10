@@ -178,6 +178,17 @@ I never used this for a longer time period, so happy about feedback!
 
 # Known issues
 
+## Fuzzing
+
+To run the fuzz targets one has to [disable lto](https://github.com/rust-fuzz/cargo-fuzz/issues/384).
+- fuzz with `RUSTFLAGS="-C lto=false"`
+
+Example: 
+```bash
+# start fuzzing the pixelflut command parser
+RUSTFLAGS="-C lto=false" cargo fuzz run parser
+```
+
 # Performance
 
 ## Laptop
